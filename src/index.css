@@ -1,13 +1,155 @@
+/* Global Styles */
 body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+/* Pokedex Section */
+.pokedex--section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #ff5851; /* Pokedex red background */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.pokedex-screen {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 80%;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff5851; /* Red for Pokedex button */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ff2d19; /* Darker red on hover */
+}
+
+.pokeInfo {
+  margin-top: 20px;
+}
+
+.pokeName {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff5851; /* Pokedex red color for name */
+}
+
+.pokeInfo img {
+  width: 150px;
+  height: 150px;
+}
+
+.types {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.types ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.types li {
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.pokeStats {
+  margin-top: 20px;
+}
+
+.pokeStats ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pokeStats li {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.pokemon-data {
+  margin-top: 30px;
+}
+
+.lists {
+  display: flex;
+  justify-content: space-between;
+}
+
+.abilityList,
+.moveList {
+  width: 45%;
+}
+
+.abilityList ul,
+.moveList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.abilityList li,
+.moveList li {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.pokeInfo,
+.pokemon-data {
+  margin-top: 20px;
+}
+
+.pokemon-data p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
 }
